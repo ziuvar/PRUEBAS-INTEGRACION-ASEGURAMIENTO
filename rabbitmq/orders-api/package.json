@@ -1,0 +1,14 @@
+{
+  "name": "rabbitmq-orders-api",
+  "version": "1.0.0",
+  "description": "API REST productora de mensajes para RabbitMQ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "amqplib": "^0.10.7",
+    "express": "^4.21.2"
+  }
+}
+

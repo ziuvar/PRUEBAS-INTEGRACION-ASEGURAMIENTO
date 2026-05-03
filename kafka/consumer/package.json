@@ -1,0 +1,13 @@
+{
+  "name": "kafka-generic-consumer",
+  "version": "1.0.0",
+  "description": "Consumidor generico de eventos para Kafka",
+  "main": "consumer.js",
+  "scripts": {
+    "start": "node consumer.js"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}
+

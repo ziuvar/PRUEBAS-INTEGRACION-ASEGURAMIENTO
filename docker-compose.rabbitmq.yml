@@ -1,0 +1,36 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3.13-management
+    restart: unless-stopped
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: admin
+
+  orders-api:
+    build:
+      context: ./rabbitmq/orders-api
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      PORT: 3000
+      RABBITMQ_URL: amqp://admin:admin@rabbitmq:5672
+      RABBITMQ_QUEUE: pedidos
+    depends_on:
+      - rabbitmq
+
+  notification-worker:
+    build:
+      context: ./rabbitmq/notification-worker
+    restart: unless-stopped
+    environment:
+      RABBITMQ_URL: amqp://admin:admin@rabbitmq:5672
+      RABBITMQ_QUEUE: pedidos
+      PREFETCH: 1
+      PROCESSING_DELAY_MS: 2000
+    depends_on:
+      - rabbitmq
+
