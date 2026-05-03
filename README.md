@@ -138,6 +138,9 @@ La guía de capturas y el formato del informe están en:
 
 - [docs/EVIDENCE_GUIDE.md](docs/EVIDENCE_GUIDE.md)
 - [docs/REPORT_TEMPLATE.md](docs/REPORT_TEMPLATE.md)
+- [docs/INTEGRATION_TEST_REPORT.md](docs/INTEGRATION_TEST_REPORT.md)
+- [docs/INTEGRATION_TEST_REPORT.pdf](docs/INTEGRATION_TEST_REPORT.pdf)
+- [docs/INTEGRATION_TEST_EVIDENCE_PACK.pdf](docs/INTEGRATION_TEST_EVIDENCE_PACK.pdf)
 
 Tambien puedes regenerar evidencia tecnica real con:
 

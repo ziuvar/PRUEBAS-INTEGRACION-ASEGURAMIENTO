@@ -274,6 +274,7 @@ RabbitMQ fue mas directa para validar desde QA cuando el foco fue observar cola,
 
 ## 6. Anexos
 
+- Evidencia consolidada en PDF: [INTEGRATION_TEST_EVIDENCE_PACK.pdf](INTEGRATION_TEST_EVIDENCE_PACK.pdf)
 - Resumen automatizado: [summary.json](evidence/latest/summary.json)
 - Evidencia RabbitMQ: [evidence/latest/rabbitmq/](evidence/latest/rabbitmq/)
 - Evidencia Kafka: [evidence/latest/kafka/](evidence/latest/kafka/)
