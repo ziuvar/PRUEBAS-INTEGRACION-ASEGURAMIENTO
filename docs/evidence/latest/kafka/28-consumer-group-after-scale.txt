@@ -1,0 +1,4 @@
+﻿
+GROUP                      TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                HOST            CLIENT-ID
+notification-service-group orders.events   0          4               4               0               notification-consumer-7f397605-b864-4e05-a390-9132e3cc5a4b /172.18.0.8     notification-consumer
+notification-service-group orders.events   1          6               6               0               notification-consumer-143a2d74-c178-40ed-b3c6-797ac32771c1 /172.18.0.4     notification-consumer

@@ -1,0 +1,2 @@
+﻿Container pruebasintegracion-notification-worker-1 Starting 
+ Container pruebasintegracion-notification-worker-1 Started

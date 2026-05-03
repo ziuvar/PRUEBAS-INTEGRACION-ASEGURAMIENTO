@@ -103,7 +103,7 @@
 
 - Arquitectura: Kafka
 - Objetivo: Verificar que la API publica el evento `OrderCreated` en el topic `orders.events`.
-- Precondiciones: `kafka`, `kafka-ui` y `orders-api` en ejecución.
+- Precondiciones: `kafka`, `kafka-ui` y `orders-api` en ejecución (`http://localhost:8081` para Kafka UI).
 - Datos de entrada:
 
 ```json
@@ -269,4 +269,3 @@
 - Logs
 - Comandos ejecutados
 - Observaciones finales
-

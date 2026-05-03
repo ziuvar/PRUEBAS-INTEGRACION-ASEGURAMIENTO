@@ -1,0 +1,3 @@
+﻿NAME                                         IMAGE                                      COMMAND                  SERVICE                 CREATED                  STATUS                  PORTS
+pruebasintegracion-notification-consumer-1   pruebasintegracion-notification-consumer   "docker-entrypoint.s…"   notification-consumer   49 seconds ago           Up 26 seconds           
+pruebasintegracion-notification-consumer-2   pruebasintegracion-notification-consumer   "docker-entrypoint.s…"   notification-consumer   Less than a second ago   Up Less than a second

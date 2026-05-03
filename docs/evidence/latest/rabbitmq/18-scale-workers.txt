@@ -1,0 +1,6 @@
+﻿Container pruebasintegracion-notification-worker-1 Running 
+ Container pruebasintegracion-notification-worker-2 Creating 
+ Container pruebasintegracion-orders-api-1 Running 
+ Container pruebasintegracion-notification-worker-2 Created 
+ Container pruebasintegracion-notification-worker-2 Starting 
+ Container pruebasintegracion-notification-worker-2 Started

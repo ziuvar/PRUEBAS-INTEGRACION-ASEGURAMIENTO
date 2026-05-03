@@ -1,0 +1,4 @@
+﻿NAME                                       IMAGE                                    COMMAND                  SERVICE               CREATED          STATUS         PORTS
+pruebasintegracion-notification-worker-1   pruebasintegracion-notification-worker   "docker-entrypoint.s…"   notification-worker   9 seconds ago    Up 8 seconds   
+pruebasintegracion-orders-api-1            pruebasintegracion-orders-api            "docker-entrypoint.s…"   orders-api            9 seconds ago    Up 8 seconds   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp
+pruebasintegracion-rabbitmq-1              rabbitmq:3.13-management                 "docker-entrypoint.s…"   rabbitmq              10 seconds ago   Up 8 seconds   0.0.0.0:5672->5672/tcp, [::]:5672->5672/tcp, 0.0.0.0:15672->15672/tcp, [::]:15672->15672/tcp

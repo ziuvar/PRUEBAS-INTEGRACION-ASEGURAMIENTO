@@ -1,0 +1,24 @@
+﻿notification-worker-1  | 
+notification-worker-1  | > rabbitmq-notification-worker@1.0.0 start
+notification-worker-1  | > node worker.js
+notification-worker-1  | 
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] RabbitMQ no disponible: connect ECONNREFUSED 172.18.0.2:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] RabbitMQ no disponible: connect ECONNREFUSED 172.18.0.2:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Escuchando cola "pedidos" con prefetch=1.
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Mensaje recibido orderId=ORD-1777838559240 correlationId=32f16a65-36e7-417a-8f7b-82f50aed013c
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Simulando envio de notificacion...
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Pedido ORD-1777838559240 procesado y confirmado con ack manual.
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Cerrando worker...
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Conexion cerrada. Reintentando...
+notification-worker-1  | 
+notification-worker-1  | > rabbitmq-notification-worker@1.0.0 start
+notification-worker-1  | > node worker.js
+notification-worker-1  | 
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Escuchando cola "pedidos" con prefetch=1.
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Mensaje recibido orderId=ORD-1777838563191 correlationId=659e00d5-4adb-416c-af80-08c4e10a9585
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Simulando envio de notificacion...
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Pedido ORD-1777838563191 procesado y confirmado con ack manual.

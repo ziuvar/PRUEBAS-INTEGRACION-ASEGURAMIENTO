@@ -1,0 +1,12 @@
+﻿orders-api-1  | 
+orders-api-1  | > rabbitmq-orders-api@1.0.0 start
+orders-api-1  | > node server.js
+orders-api-1  | 
+orders-api-1  | [orders-api][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+orders-api-1  | [orders-api][rabbitmq] API escuchando en puerto 3000
+orders-api-1  | [orders-api][rabbitmq] RabbitMQ no disponible: connect ECONNREFUSED 172.18.0.2:5672
+orders-api-1  | [orders-api][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+orders-api-1  | [orders-api][rabbitmq] RabbitMQ no disponible: connect ECONNREFUSED 172.18.0.2:5672
+orders-api-1  | [orders-api][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+orders-api-1  | [orders-api][rabbitmq] Conexion lista y cola "pedidos" disponible.
+orders-api-1  | [orders-api][rabbitmq] Pedido ORD-1777838559240 publicado en cola "pedidos" con correlationId=32f16a65-36e7-417a-8f7b-82f50aed013c.

@@ -1,0 +1,12 @@
+﻿
+GROUP                 TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                           HOST            CLIENT-ID
+billing-service-group orders.events   1          1               1               0               billing-consumer-4cf1dfbd-6924-4b57-837e-415611545bba /172.18.0.6     billing-consumer
+billing-service-group orders.events   0          -               0               -               billing-consumer-4cf1dfbd-6924-4b57-837e-415611545bba /172.18.0.6     billing-consumer
+
+GROUP                   TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                             HOST            CLIENT-ID
+inventory-service-group orders.events   1          1               1               0               inventory-consumer-7cec2da3-01d2-4c0d-a110-d909e1b63eaa /172.18.0.3     inventory-consumer
+inventory-service-group orders.events   0          -               0               -               inventory-consumer-7cec2da3-01d2-4c0d-a110-d909e1b63eaa /172.18.0.3     inventory-consumer
+
+GROUP                      TOPIC           PARTITION  CURRENT-OFFSET  LOG-END-OFFSET  LAG             CONSUMER-ID                                                HOST            CLIENT-ID
+notification-service-group orders.events   1          1               1               0               notification-consumer-bc1d81bc-14f1-48a7-bb8f-b3cae57b1c7c /172.18.0.4     notification-consumer
+notification-service-group orders.events   0          -               0               -               notification-consumer-bc1d81bc-14f1-48a7-bb8f-b3cae57b1c7c /172.18.0.4     notification-consumer

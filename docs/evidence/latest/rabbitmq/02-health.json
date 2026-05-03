@@ -1,0 +1,6 @@
+﻿{
+    "service":  "orders-api",
+    "architecture":  "rabbitmq",
+    "brokerReady":  true,
+    "queueName":  "pedidos"
+}

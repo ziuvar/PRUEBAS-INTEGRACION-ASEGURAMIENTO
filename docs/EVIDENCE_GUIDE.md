@@ -23,7 +23,7 @@ Captura:
 - `docker compose -f .\docker-compose.kafka.yml logs inventory-consumer`
 - `docker compose -f .\docker-compose.kafka.yml logs billing-consumer`
 - `docker compose -f .\docker-compose.kafka.yml logs notification-consumer`
-- consola `http://localhost:8080`
+- consola `http://localhost:8081`
 - topic `orders.events`
 - consumer groups
 
@@ -151,4 +151,3 @@ Captura:
 8. Ejecutar prueba con consumidor apagado.
 9. Ejecutar prueba con múltiples consumidores.
 10. Tomar conclusiones comparativas.
-

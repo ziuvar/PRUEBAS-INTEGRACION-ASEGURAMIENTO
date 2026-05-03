@@ -1,0 +1,1 @@
+﻿Container pruebasintegracion-notification-consumer-1 Stopped

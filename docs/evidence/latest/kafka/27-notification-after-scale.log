@@ -1,0 +1,72 @@
+﻿notification-consumer-2  | 
+notification-consumer-2  | > kafka-generic-consumer@1.0.0 start
+notification-consumer-2  | > node consumer.js
+notification-consumer-1  | 
+notification-consumer-2  | 
+notification-consumer-2  | [notification-consumer][kafka] Intentando conexion a kafka:9092
+notification-consumer-1  | > kafka-generic-consumer@1.0.0 start
+notification-consumer-2  | {"level":"ERROR","timestamp":"2026-05-03T20:03:51.749Z","logger":"kafkajs","message":"[Connection] Response CreateTopics(key: 19, version: 3)","broker":"kafka:9092","clientId":"notification-consumer","error":"Topic creation errors","correlationId":2,"size":68}
+notification-consumer-1  | > node consumer.js
+notification-consumer-1  | 
+notification-consumer-2  | [notification-consumer][kafka] Escuchando topic "orders.events" en groupId="notification-service-group" desde instanceId="40d3b5bf0267".
+notification-consumer-1  | [notification-consumer][kafka] Intentando conexion a kafka:9092
+notification-consumer-1  | {"level":"ERROR","timestamp":"2026-05-03T20:03:03.021Z","logger":"kafkajs","message":"[Connection] Connection error: connect ECONNREFUSED 172.18.0.2:9092","broker":"kafka:9092","clientId":"notification-consumer","stack":"Error: connect ECONNREFUSED 172.18.0.2:9092\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)"}
+notification-consumer-2  | {"level":"INFO","timestamp":"2026-05-03T20:03:51.754Z","logger":"kafkajs","message":"[Consumer] Starting","groupId":"notification-service-group"}
+notification-consumer-1  | {"level":"ERROR","timestamp":"2026-05-03T20:03:03.022Z","logger":"kafkajs","message":"[BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED 172.18.0.2:9092","retryCount":0,"retryTime":360}
+notification-consumer-1  | {"level":"ERROR","timestamp":"2026-05-03T20:03:03.385Z","logger":"kafkajs","message":"[Connection] Connection error: connect ECONNREFUSED 172.18.0.2:9092","broker":"kafka:9092","clientId":"notification-consumer","stack":"Error: connect ECONNREFUSED 172.18.0.2:9092\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)"}
+notification-consumer-2  | {"level":"INFO","timestamp":"2026-05-03T20:03:55.320Z","logger":"kafkajs","message":"[ConsumerGroup] Consumer has joined the group","groupId":"notification-service-group","memberId":"notification-consumer-7f397605-b864-4e05-a390-9132e3cc5a4b","leaderId":"notification-consumer-143a2d74-c178-40ed-b3c6-797ac32771c1","isLeader":false,"memberAssignment":{"orders.events":[0]},"groupProtocol":"RoundRobinAssigner","duration":3565}
+notification-consumer-1  | {"level":"ERROR","timestamp":"2026-05-03T20:03:03.385Z","logger":"kafkajs","message":"[BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED 172.18.0.2:9092","retryCount":1,"retryTime":864}
+notification-consumer-2  | [notification-consumer][kafka] Evento recibido eventType=OrderCreated orderId=ORD-1777838631750
+notification-consumer-1  | {"level":"ERROR","timestamp":"2026-05-03T20:03:04.250Z","logger":"kafkajs","message":"[Connection] Connection error: connect ECONNREFUSED 172.18.0.2:9092","broker":"kafka:9092","clientId":"notification-consumer","stack":"Error: connect ECONNREFUSED 172.18.0.2:9092\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)"}
+notification-consumer-2  | [notification-consumer][kafka] Envio de notificacion topic=orders.events partition=0 offset=1 key=ORD-1777838631750
+notification-consumer-2  | [notification-consumer][kafka] Procesamiento completado para orderId=ORD-1777838631750 correlationId=06cb6e4e-fb26-4109-9c1f-3ae874105a92
+notification-consumer-1  | {"level":"ERROR","timestamp":"2026-05-03T20:03:04.250Z","logger":"kafkajs","message":"[BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED 172.18.0.2:9092","retryCount":2,"retryTime":1702}
+notification-consumer-2  | [notification-consumer][kafka] Evento recibido eventType=OrderCreated orderId=ORD-1777838631845
+notification-consumer-2  | [notification-consumer][kafka] Envio de notificacion topic=orders.events partition=0 offset=2 key=ORD-1777838631845
+notification-consumer-1  | {"level":"ERROR","timestamp":"2026-05-03T20:03:05.954Z","logger":"kafkajs","message":"[Connection] Connection error: connect ECONNREFUSED 172.18.0.2:9092","broker":"kafka:9092","clientId":"notification-consumer","stack":"Error: connect ECONNREFUSED 172.18.0.2:9092\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)"}
+notification-consumer-2  | [notification-consumer][kafka] Procesamiento completado para orderId=ORD-1777838631845 correlationId=7e53c15e-f841-458e-9b2b-2e08a43015f3
+notification-consumer-1  | {"level":"ERROR","timestamp":"2026-05-03T20:03:05.955Z","logger":"kafkajs","message":"[BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED 172.18.0.2:9092","retryCount":3,"retryTime":2838}
+notification-consumer-2  | [notification-consumer][kafka] Evento recibido eventType=OrderCreated orderId=ORD-1777838631875
+notification-consumer-1  | {"level":"ERROR","timestamp":"2026-05-03T20:03:08.796Z","logger":"kafkajs","message":"[Connection] Connection error: connect ECONNREFUSED 172.18.0.2:9092","broker":"kafka:9092","clientId":"notification-consumer","stack":"Error: connect ECONNREFUSED 172.18.0.2:9092\n    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)"}
+notification-consumer-1  | {"level":"ERROR","timestamp":"2026-05-03T20:03:08.797Z","logger":"kafkajs","message":"[BrokerPool] Failed to connect to seed broker, trying another broker from the list: Connection error: connect ECONNREFUSED 172.18.0.2:9092","retryCount":4,"retryTime":5502}
+notification-consumer-2  | [notification-consumer][kafka] Envio de notificacion topic=orders.events partition=0 offset=3 key=ORD-1777838631875
+notification-consumer-1  | {"level":"ERROR","timestamp":"2026-05-03T20:03:14.318Z","logger":"kafkajs","message":"[Connection] Response CreateTopics(key: 19, version: 3)","broker":"kafka:9092","clientId":"notification-consumer","error":"Topic creation errors","correlationId":2,"size":68}
+notification-consumer-2  | [notification-consumer][kafka] Procesamiento completado para orderId=ORD-1777838631875 correlationId=071a88f6-6372-41cd-b8c8-8d7862d3867c
+notification-consumer-1  | [notification-consumer][kafka] Escuchando topic "orders.events" en groupId="notification-service-group" desde instanceId="e99a8e7505a2".
+notification-consumer-1  | {"level":"INFO","timestamp":"2026-05-03T20:03:14.323Z","logger":"kafkajs","message":"[Consumer] Starting","groupId":"notification-service-group"}
+notification-consumer-1  | {"level":"INFO","timestamp":"2026-05-03T20:03:17.707Z","logger":"kafkajs","message":"[ConsumerGroup] Consumer has joined the group","groupId":"notification-service-group","memberId":"notification-consumer-bc1d81bc-14f1-48a7-bb8f-b3cae57b1c7c","leaderId":"notification-consumer-bc1d81bc-14f1-48a7-bb8f-b3cae57b1c7c","isLeader":true,"memberAssignment":{"orders.events":[0,1]},"groupProtocol":"RoundRobinAssigner","duration":3384}
+notification-consumer-1  | [notification-consumer][kafka] Evento recibido eventType=OrderCreated orderId=ORD-1777838599216
+notification-consumer-1  | [notification-consumer][kafka] Envio de notificacion topic=orders.events partition=1 offset=0 key=ORD-1777838599216
+notification-consumer-1  | [notification-consumer][kafka] Procesamiento completado para orderId=ORD-1777838599216 correlationId=06f45e2c-7222-48ea-90c1-5f44aba19d77
+notification-consumer-1  | [notification-consumer][kafka] Cerrando consumidor...
+notification-consumer-1  | 
+notification-consumer-1  | > kafka-generic-consumer@1.0.0 start
+notification-consumer-1  | > node consumer.js
+notification-consumer-1  | 
+notification-consumer-1  | [notification-consumer][kafka] Intentando conexion a kafka:9092
+notification-consumer-1  | {"level":"ERROR","timestamp":"2026-05-03T20:03:25.421Z","logger":"kafkajs","message":"[Connection] Response CreateTopics(key: 19, version: 3)","broker":"kafka:9092","clientId":"notification-consumer","error":"Topic creation errors","correlationId":2,"size":68}
+notification-consumer-1  | [notification-consumer][kafka] Escuchando topic "orders.events" en groupId="notification-service-group" desde instanceId="e99a8e7505a2".
+notification-consumer-1  | {"level":"INFO","timestamp":"2026-05-03T20:03:25.425Z","logger":"kafkajs","message":"[Consumer] Starting","groupId":"notification-service-group"}
+notification-consumer-1  | {"level":"INFO","timestamp":"2026-05-03T20:03:50.757Z","logger":"kafkajs","message":"[ConsumerGroup] Consumer has joined the group","groupId":"notification-service-group","memberId":"notification-consumer-143a2d74-c178-40ed-b3c6-797ac32771c1","leaderId":"notification-consumer-143a2d74-c178-40ed-b3c6-797ac32771c1","isLeader":true,"memberAssignment":{"orders.events":[0,1]},"groupProtocol":"RoundRobinAssigner","duration":25331}
+notification-consumer-1  | [notification-consumer][kafka] Evento recibido eventType=OrderCreated orderId=ORD-1777838602877
+notification-consumer-1  | [notification-consumer][kafka] Envio de notificacion topic=orders.events partition=1 offset=1 key=ORD-1777838602877
+notification-consumer-1  | [notification-consumer][kafka] Procesamiento completado para orderId=ORD-1777838602877 correlationId=a4a9829e-7d1d-4179-ad03-5c8fe3e168fe
+notification-consumer-1  | [notification-consumer][kafka] Evento recibido eventType=OrderCreated orderId=ORD-1777838631719
+notification-consumer-1  | [notification-consumer][kafka] Envio de notificacion topic=orders.events partition=0 offset=0 key=ORD-1777838631719
+notification-consumer-1  | [notification-consumer][kafka] Procesamiento completado para orderId=ORD-1777838631719 correlationId=757d4b9e-fcf5-4407-86c5-1e04617c0b92
+notification-consumer-1  | {"level":"ERROR","timestamp":"2026-05-03T20:03:53.790Z","logger":"kafkajs","message":"[Connection] Response Heartbeat(key: 12, version: 3)","broker":"kafka:9092","clientId":"notification-consumer","error":"The group is rebalancing, so a rejoin is needed","correlationId":11,"size":10}
+notification-consumer-1  | [notification-consumer][kafka] Evento recibido eventType=OrderCreated orderId=ORD-1777838631786
+notification-consumer-1  | [notification-consumer][kafka] Envio de notificacion topic=orders.events partition=1 offset=2 key=ORD-1777838631786
+notification-consumer-1  | [notification-consumer][kafka] Procesamiento completado para orderId=ORD-1777838631786 correlationId=b46a751e-4d2a-4b1b-8e01-ac476abd9d70
+notification-consumer-1  | {"level":"ERROR","timestamp":"2026-05-03T20:03:55.301Z","logger":"kafkajs","message":"[Connection] Response Heartbeat(key: 12, version: 3)","broker":"kafka:9092","clientId":"notification-consumer","error":"The group is rebalancing, so a rejoin is needed","correlationId":13,"size":10}
+notification-consumer-1  | {"level":"WARN","timestamp":"2026-05-03T20:03:55.309Z","logger":"kafkajs","message":"[Runner] The group is rebalancing, re-joining","groupId":"notification-service-group","memberId":"notification-consumer-143a2d74-c178-40ed-b3c6-797ac32771c1","error":"The group is rebalancing, so a rejoin is needed"}
+notification-consumer-1  | {"level":"INFO","timestamp":"2026-05-03T20:03:55.320Z","logger":"kafkajs","message":"[ConsumerGroup] Consumer has joined the group","groupId":"notification-service-group","memberId":"notification-consumer-143a2d74-c178-40ed-b3c6-797ac32771c1","leaderId":"notification-consumer-143a2d74-c178-40ed-b3c6-797ac32771c1","isLeader":true,"memberAssignment":{"orders.events":[1]},"groupProtocol":"RoundRobinAssigner","duration":10}
+notification-consumer-1  | [notification-consumer][kafka] Evento recibido eventType=OrderCreated orderId=ORD-1777838631817
+notification-consumer-1  | [notification-consumer][kafka] Envio de notificacion topic=orders.events partition=1 offset=3 key=ORD-1777838631817
+notification-consumer-1  | [notification-consumer][kafka] Procesamiento completado para orderId=ORD-1777838631817 correlationId=3c32b223-3fee-4185-9a79-db2ba155ae86
+notification-consumer-1  | [notification-consumer][kafka] Evento recibido eventType=OrderCreated orderId=ORD-1777838631901
+notification-consumer-1  | [notification-consumer][kafka] Envio de notificacion topic=orders.events partition=1 offset=4 key=ORD-1777838631901
+notification-consumer-1  | [notification-consumer][kafka] Procesamiento completado para orderId=ORD-1777838631901 correlationId=486d9b92-4395-4c79-971e-dd8471bb4196
+notification-consumer-1  | [notification-consumer][kafka] Evento recibido eventType=OrderCreated orderId=ORD-1777838631926
+notification-consumer-1  | [notification-consumer][kafka] Envio de notificacion topic=orders.events partition=1 offset=5 key=ORD-1777838631926
+notification-consumer-1  | [notification-consumer][kafka] Procesamiento completado para orderId=ORD-1777838631926 correlationId=b544d3e4-166d-4cbb-94a2-38a973cad368

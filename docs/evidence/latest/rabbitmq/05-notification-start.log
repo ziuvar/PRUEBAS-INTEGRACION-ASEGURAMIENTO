@@ -1,0 +1,10 @@
+﻿notification-worker-1  | 
+notification-worker-1  | > rabbitmq-notification-worker@1.0.0 start
+notification-worker-1  | > node worker.js
+notification-worker-1  | 
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] RabbitMQ no disponible: connect ECONNREFUSED 172.18.0.2:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] RabbitMQ no disponible: connect ECONNREFUSED 172.18.0.2:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Escuchando cola "pedidos" con prefetch=1.

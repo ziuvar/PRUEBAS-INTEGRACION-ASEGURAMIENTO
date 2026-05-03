@@ -1,0 +1,3 @@
+﻿{"status":"accepted","message":"Pedido recibido y evento OrderCreated publicado en Kafka","orderId":"ORD-1777838599216"}
+TIME_TOTAL=0.023589
+HTTP_CODE=202

@@ -1,0 +1,17 @@
+﻿Container pruebasintegracion-orders-api-1 Stopping 
+ Container pruebasintegracion-notification-worker-2 Stopping 
+ Container pruebasintegracion-notification-worker-1 Stopped 
+ Container pruebasintegracion-notification-worker-1 Removing 
+ Container pruebasintegracion-notification-worker-1 Removed 
+ Container pruebasintegracion-notification-worker-2 Stopped 
+ Container pruebasintegracion-notification-worker-2 Removing 
+ Container pruebasintegracion-notification-worker-2 Removed 
+ Container pruebasintegracion-orders-api-1 Stopped 
+ Container pruebasintegracion-orders-api-1 Removing 
+ Container pruebasintegracion-orders-api-1 Removed 
+ Container pruebasintegracion-rabbitmq-1 Stopping 
+ Container pruebasintegracion-rabbitmq-1 Stopped 
+ Container pruebasintegracion-rabbitmq-1 Removing 
+ Container pruebasintegracion-rabbitmq-1 Removed 
+ Network pruebasintegracion_default Removing 
+ Network pruebasintegracion_default Removed

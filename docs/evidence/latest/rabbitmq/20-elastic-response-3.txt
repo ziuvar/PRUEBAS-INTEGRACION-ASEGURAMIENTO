@@ -1,0 +1,3 @@
+﻿{"status":"accepted","message":"Pedido recibido y enviado a RabbitMQ","orderId":"ORD-1777838567760"}
+TIME_TOTAL=0.002590
+HTTP_CODE=202

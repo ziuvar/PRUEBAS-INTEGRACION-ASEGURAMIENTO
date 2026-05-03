@@ -1,0 +1,2 @@
+﻿Container pruebasintegracion-notification-consumer-1 Starting 
+ Container pruebasintegracion-notification-consumer-1 Started

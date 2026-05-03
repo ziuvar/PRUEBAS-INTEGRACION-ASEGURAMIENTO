@@ -1,0 +1,144 @@
+﻿Image pruebasintegracion-inventory-consumer Building 
+ Image pruebasintegracion-billing-consumer Building 
+ Image pruebasintegracion-notification-consumer Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 2.32kB 0.0s done
+#1 DONE 0.0s
+
+#2 [inventory-consumer internal] load build definition from Dockerfile
+#2 transferring dockerfile: 164B done
+#2 DONE 0.0s
+
+#3 [orders-api internal] load build definition from Dockerfile
+#3 transferring dockerfile: 177B done
+#3 DONE 0.0s
+
+#4 [orders-api internal] load metadata for docker.io/library/node:20-alpine
+#4 DONE 0.4s
+
+#5 [orders-api internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.0s
+
+#6 [billing-consumer internal] load .dockerignore
+#6 transferring context: 2B done
+#6 DONE 0.0s
+
+#7 [orders-api internal] load build context
+#7 transferring context: 4.38kB done
+#7 DONE 0.0s
+
+#8 [billing-consumer internal] load build context
+#8 transferring context: 65B done
+#8 DONE 0.0s
+
+#9 [inventory-consumer 1/5] FROM docker.io/library/node:20-alpine@sha256:fb4cd12c85ee03686f6af5362a0b0d56d50c58a04632e6c0fb8363f609372293
+#9 resolve docker.io/library/node:20-alpine@sha256:fb4cd12c85ee03686f6af5362a0b0d56d50c58a04632e6c0fb8363f609372293 0.0s done
+#9 DONE 0.0s
+
+#10 [orders-api 3/5] COPY package.json ./
+#10 CACHED
+
+#11 [orders-api 4/5] RUN npm install --omit=dev
+#11 CACHED
+
+#12 [orders-api 5/5] COPY server.js ./
+#12 CACHED
+
+#13 [billing-consumer 3/5] COPY package.json ./
+#13 CACHED
+
+#14 [billing-consumer 4/5] RUN npm install --omit=dev
+#14 CACHED
+
+#15 [billing-consumer 2/5] WORKDIR /app
+#15 CACHED
+
+#16 [billing-consumer 5/5] COPY consumer.js ./
+#16 CACHED
+
+#17 [billing-consumer] exporting to image
+#17 exporting layers done
+#17 exporting manifest sha256:0da3c5e49362a0b2208eedcf548ddbe60303b7c25cf4f95ac65912845070bc4e
+#17 exporting manifest sha256:0da3c5e49362a0b2208eedcf548ddbe60303b7c25cf4f95ac65912845070bc4e 0.0s done
+#17 exporting config sha256:88da54de165fa8c763bd32386b202d306c33a309ac57424bfb36a8c36f74f9b8 0.0s done
+#17 exporting attestation manifest sha256:a73a42e6c206c0e5cd61315d7cd94810939bcde57ce9182d94c1a79b49273851
+#17 exporting attestation manifest sha256:a73a42e6c206c0e5cd61315d7cd94810939bcde57ce9182d94c1a79b49273851 0.1s done
+#17 exporting manifest list sha256:8f011d7493aad0151389ca5d0425d38933de5e80ac4743b440406823564022fa
+#17 exporting manifest list sha256:8f011d7493aad0151389ca5d0425d38933de5e80ac4743b440406823564022fa 0.1s done
+#17 naming to docker.io/library/pruebasintegracion-billing-consumer:latest 0.0s done
+#17 unpacking to docker.io/library/pruebasintegracion-billing-consumer:latest 0.0s done
+#17 DONE 0.4s
+
+#18 [notification-consumer] exporting to image
+#18 exporting layers done
+#18 exporting manifest sha256:8ce894691261937fee5e61cb0612e0e980f6f2bfbb0b94303d289b4243131213 0.0s done
+#18 exporting config sha256:fdeb72e52a4a0aeeca294e11c78d4c3d2153519b5b9e925efaea69a4a5f4b4ef 0.0s done
+#18 exporting attestation manifest sha256:4ef592e68247bdbb088ccdfc06b608b84f00352774549f7c244410f46e0a7c51 0.1s done
+#18 exporting manifest list sha256:1e55ef8a2001ff6419567416ca4e8c87fcdaacff29de5a470866c08174761435 0.1s done
+#18 naming to docker.io/library/pruebasintegracion-notification-consumer:latest 0.0s done
+#18 unpacking to docker.io/library/pruebasintegracion-notification-consumer:latest 0.0s done
+#18 DONE 0.4s
+
+#19 [inventory-consumer] exporting to image
+#19 exporting layers done
+#19 exporting manifest sha256:22a20d756ce2def5903cd63370f66b7e9696ff04725b474d07a1215e5ec1c125 0.0s done
+#19 exporting config sha256:3be6d366908e393022fc9d4e81dd70fce084eda204cd727bf996963a99744986 0.0s done
+#19 exporting attestation manifest sha256:0564fa4ac2e98f2b941c0cf91236fc8ccb87580c1098d54c4864359c7e541636 0.1s done
+#19 exporting manifest list sha256:8a3950255de25d0fbe00ad04111b5436fadee7995e2c5e3ca2c00dce5f43accf 0.1s done
+#19 naming to docker.io/library/pruebasintegracion-inventory-consumer:latest 0.0s done
+#19 unpacking to docker.io/library/pruebasintegracion-inventory-consumer:latest 0.0s done
+#19 DONE 0.4s
+
+#20 [orders-api] exporting to image
+#20 exporting layers done
+#20 exporting manifest sha256:71005fc864e587d53bcab8e2098dc50b45e613bb2e8fb85c6ea9472a3f34929e 0.0s done
+#20 exporting config sha256:f2a60cd4ef70aa118cde9683130af794be3dcb9d7b0a4983a0d374943147717a 0.1s done
+#20 exporting attestation manifest sha256:e06b0ee57531c8f86f375661ab1980fbe0d63848b8ba0d462ae04d197ae1e931 0.1s done
+#20 exporting manifest list sha256:627b9740a9eeca22c333d375b684db06fc45d887c715fc377f8666a9373f5c38 0.0s done
+#20 naming to docker.io/library/pruebasintegracion-orders-api:latest 0.0s done
+#20 unpacking to docker.io/library/pruebasintegracion-orders-api:latest
+#20 unpacking to docker.io/library/pruebasintegracion-orders-api:latest 0.4s done
+#20 DONE 0.7s
+
+#21 [notification-consumer] resolving provenance for metadata file
+#21 DONE 0.2s
+
+#22 [inventory-consumer] resolving provenance for metadata file
+#22 DONE 0.1s
+
+#23 [billing-consumer] resolving provenance for metadata file
+#23 DONE 0.1s
+
+#24 [orders-api] resolving provenance for metadata file
+#24 DONE 0.0s
+ Image pruebasintegracion-inventory-consumer Built 
+ Image pruebasintegracion-notification-consumer Built 
+ Image pruebasintegracion-orders-api Built 
+ Image pruebasintegracion-billing-consumer Built 
+ Network pruebasintegracion_default Creating 
+ Network pruebasintegracion_default Created 
+ Container pruebasintegracion-kafka-1 Creating 
+ Container pruebasintegracion-kafka-1 Created 
+ Container pruebasintegracion-notification-consumer-1 Creating 
+ Container pruebasintegracion-inventory-consumer-1 Creating 
+ Container pruebasintegracion-billing-consumer-1 Creating 
+ Container pruebasintegracion-kafka-ui-1 Creating 
+ Container pruebasintegracion-orders-api-1 Creating 
+ Container pruebasintegracion-kafka-ui-1 Created 
+ Container pruebasintegracion-notification-consumer-1 Created 
+ Container pruebasintegracion-billing-consumer-1 Created 
+ Container pruebasintegracion-inventory-consumer-1 Created 
+ Container pruebasintegracion-orders-api-1 Created 
+ Container pruebasintegracion-kafka-1 Starting 
+ Container pruebasintegracion-kafka-1 Started 
+ Container pruebasintegracion-orders-api-1 Starting 
+ Container pruebasintegracion-inventory-consumer-1 Starting 
+ Container pruebasintegracion-billing-consumer-1 Starting 
+ Container pruebasintegracion-notification-consumer-1 Starting 
+ Container pruebasintegracion-kafka-ui-1 Starting 
+ Container pruebasintegracion-inventory-consumer-1 Started 
+ Container pruebasintegracion-notification-consumer-1 Started 
+ Container pruebasintegracion-orders-api-1 Started 
+ Container pruebasintegracion-billing-consumer-1 Started 
+ Container pruebasintegracion-kafka-ui-1 Started

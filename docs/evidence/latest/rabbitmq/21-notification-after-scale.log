@@ -1,0 +1,42 @@
+﻿notification-worker-1  | 
+notification-worker-2  | 
+notification-worker-1  | > rabbitmq-notification-worker@1.0.0 start
+notification-worker-1  | > node worker.js
+notification-worker-2  | > rabbitmq-notification-worker@1.0.0 start
+notification-worker-2  | > node worker.js
+notification-worker-2  | 
+notification-worker-1  | 
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] RabbitMQ no disponible: connect ECONNREFUSED 172.18.0.2:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] RabbitMQ no disponible: connect ECONNREFUSED 172.18.0.2:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Escuchando cola "pedidos" con prefetch=1.
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Mensaje recibido orderId=ORD-1777838559240 correlationId=32f16a65-36e7-417a-8f7b-82f50aed013c
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Simulando envio de notificacion...
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Pedido ORD-1777838559240 procesado y confirmado con ack manual.
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Cerrando worker...
+notification-worker-2  | [8ca8f0e33b25][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Conexion cerrada. Reintentando...
+notification-worker-2  | [8ca8f0e33b25][rabbitmq] Escuchando cola "pedidos" con prefetch=1.
+notification-worker-2  | [8ca8f0e33b25][rabbitmq] Mensaje recibido orderId=ORD-1777838567737 correlationId=1825ca7d-dd75-4165-bac2-44cf5dbe61ba
+notification-worker-1  | 
+notification-worker-1  | > rabbitmq-notification-worker@1.0.0 start
+notification-worker-2  | [8ca8f0e33b25][rabbitmq] Simulando envio de notificacion...
+notification-worker-1  | > node worker.js
+notification-worker-1  | 
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Intentando conexion a amqp://admin:admin@rabbitmq:5672
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Escuchando cola "pedidos" con prefetch=1.
+notification-worker-2  | [8ca8f0e33b25][rabbitmq] Pedido ORD-1777838567737 procesado y confirmado con ack manual.
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Mensaje recibido orderId=ORD-1777838563191 correlationId=659e00d5-4adb-416c-af80-08c4e10a9585
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Simulando envio de notificacion...
+notification-worker-2  | [8ca8f0e33b25][rabbitmq] Mensaje recibido orderId=ORD-1777838567782 correlationId=15e54303-b1d8-402c-a607-d17fc63a367d
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Pedido ORD-1777838563191 procesado y confirmado con ack manual.
+notification-worker-2  | [8ca8f0e33b25][rabbitmq] Simulando envio de notificacion...
+notification-worker-2  | [8ca8f0e33b25][rabbitmq] Pedido ORD-1777838567782 procesado y confirmado con ack manual.
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Mensaje recibido orderId=ORD-1777838567713 correlationId=ce56ee03-021a-4a0e-83d4-cbcb8ff86819
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Simulando envio de notificacion...
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Pedido ORD-1777838567713 procesado y confirmado con ack manual.
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Mensaje recibido orderId=ORD-1777838567760 correlationId=d4e0e5a0-be37-4ac4-83e6-7a7996078b27
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Simulando envio de notificacion...
+notification-worker-1  | [3cea17cc0fae][rabbitmq] Pedido ORD-1777838567760 procesado y confirmado con ack manual.

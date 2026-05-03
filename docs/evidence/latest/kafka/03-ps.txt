@@ -1,0 +1,7 @@
+﻿NAME                                         IMAGE                                      COMMAND                  SERVICE                 CREATED          STATUS          PORTS
+pruebasintegracion-billing-consumer-1        pruebasintegracion-billing-consumer        "docker-entrypoint.s…"   billing-consumer        15 seconds ago   Up 14 seconds   
+pruebasintegracion-inventory-consumer-1      pruebasintegracion-inventory-consumer      "docker-entrypoint.s…"   inventory-consumer      15 seconds ago   Up 14 seconds   
+pruebasintegracion-kafka-1                   bitnamilegacy/kafka:4.0.0-debian-12-r10    "/opt/bitnami/script…"   kafka                   16 seconds ago   Up 14 seconds   0.0.0.0:29092->29092/tcp, [::]:29092->29092/tcp
+pruebasintegracion-kafka-ui-1                provectuslabs/kafka-ui:latest              "/bin/sh -c 'java --…"   kafka-ui                15 seconds ago   Up 14 seconds   0.0.0.0:8081->8080/tcp, [::]:8081->8080/tcp
+pruebasintegracion-notification-consumer-1   pruebasintegracion-notification-consumer   "docker-entrypoint.s…"   notification-consumer   15 seconds ago   Up 14 seconds   
+pruebasintegracion-orders-api-1              pruebasintegracion-orders-api              "docker-entrypoint.s…"   orders-api              15 seconds ago   Up 14 seconds   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp

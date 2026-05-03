@@ -1,0 +1,61 @@
+﻿{
+    "generatedAt":  "2026-05-03T15:02:26",
+    "repoRoot":  "C:\\Users\\ziuvar\\Desktop\\PRUEBAS INTEGRACION",
+    "evidenceRoot":  "docs/evidence/latest",
+    "rabbitmq":  {
+                     "cp01":  {
+                                  "orderId":  "ORD-1777838559240",
+                                  "httpCode":  202,
+                                  "timeTotal":  0.008838,
+                                  "correlationId":  "32f16a65-36e7-417a-8f7b-82f50aed013c"
+                              },
+                     "cp09":  {
+                                  "orderId":  "ORD-1777838563191",
+                                  "httpCode":  202,
+                                  "queueReadyPatternMatched":  true,
+                                  "correlationId":  "659e00d5-4adb-416c-af80-08c4e10a9585"
+                              },
+                     "cp10":  {
+                                  "scaledWorkers":  2,
+                                  "orderIds":  [
+                                                   "ORD-1777838567713",
+                                                   "ORD-1777838567737",
+                                                   "ORD-1777838567760",
+                                                   "ORD-1777838567782"
+                                               ],
+                                  "worker1Seen":  true,
+                                  "worker2Seen":  true
+                              }
+                 },
+    "kafka":  {
+                  "cp01":  {
+                               "orderId":  "ORD-1777838599216",
+                               "httpCode":  202,
+                               "timeTotal":  0.023589,
+                               "correlationId":  "06f45e2c-7222-48ea-90c1-5f44aba19d77"
+                           },
+                  "cp09":  {
+                               "orderId":  "ORD-1777838602877",
+                               "httpCode":  202,
+                               "timeTotal":  0.005395,
+                               "notificationProcessedWhileStopped":  false,
+                               "notificationProcessedAfterRestart":  true,
+                               "correlationId":  "a4a9829e-7d1d-4179-ad03-5c8fe3e168fe"
+                           },
+                  "cp10":  {
+                               "scaledConsumers":  2,
+                               "orderIds":  [
+                                                "ORD-1777838631719",
+                                                "ORD-1777838631750",
+                                                "ORD-1777838631786",
+                                                "ORD-1777838631817",
+                                                "ORD-1777838631845",
+                                                "ORD-1777838631875",
+                                                "ORD-1777838631901",
+                                                "ORD-1777838631926"
+                                            ],
+                               "consumer1Seen":  true,
+                               "consumer2Seen":  true
+                           }
+              }
+}

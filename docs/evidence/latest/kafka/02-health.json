@@ -1,0 +1,7 @@
+﻿{
+    "service":  "orders-api",
+    "architecture":  "kafka",
+    "brokerReady":  true,
+    "kafkaTopic":  "orders.events",
+    "kafkaPartitions":  2
+}

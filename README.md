@@ -44,7 +44,7 @@ La implementación usa `Node.js + Express + Docker Compose` porque reduce al mí
 - Docker Desktop con `docker compose`
 - Puerto `3000` libre
 - Puerto `15672` libre para RabbitMQ Management
-- Puerto `8080` libre para Kafka UI
+- Puerto `8081` libre para Kafka UI
 - Puerto `5672` libre para AMQP
 - Puerto `29092` libre para acceso externo a Kafka
 
@@ -108,7 +108,7 @@ curl -X POST http://localhost:3000/orders `
 
 Consola Kafka UI:
 
-- URL: `http://localhost:8080`
+- URL: `http://localhost:8081`
 
 Logs útiles:
 
@@ -139,10 +139,17 @@ La guía de capturas y el formato del informe están en:
 - [docs/EVIDENCE_GUIDE.md](docs/EVIDENCE_GUIDE.md)
 - [docs/REPORT_TEMPLATE.md](docs/REPORT_TEMPLATE.md)
 
+Tambien puedes regenerar evidencia tecnica real con:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\collect-evidence.ps1
+```
+
+Esto crea un set reproducible en `docs/evidence/latest/` con respuestas HTTP, `docker compose ps`, logs, estados de cola y consumer groups.
+
 ## Notas importantes para el taller
 
 - Los stacks están pensados para ejecutarse por separado, no al mismo tiempo.
 - En ambos casos la API responde `202 Accepted` sin esperar al consumidor.
 - No existe comunicación HTTP entre productor y consumidores.
 - En Kafka el topic se crea con `2` particiones para facilitar evidencia de offsets y escalamiento.
-
