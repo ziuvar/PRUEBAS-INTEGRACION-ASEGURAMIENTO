@@ -60,9 +60,7 @@ docker compose -f .\docker-compose.rabbitmq.yml ps
 Prueba rápida:
 
 ```powershell
-curl -X POST http://localhost:3000/orders `
-  -H "Content-Type: application/json" `
-  -d "{\"customerName\":\"Pedro\",\"product\":\"Libro de arquitectura\",\"quantity\":1}"
+curl.exe --% -s -X POST http://localhost:3000/orders -H "Content-Type: application/json" -d "{\"customerName\":\"Pedro\",\"product\":\"Libro de arquitectura\",\"quantity\":1}"
 ```
 
 Consola RabbitMQ:
@@ -101,9 +99,7 @@ docker compose -f .\docker-compose.kafka.yml ps
 Prueba rápida:
 
 ```powershell
-curl -X POST http://localhost:3000/orders `
-  -H "Content-Type: application/json" `
-  -d "{\"customerName\":\"Pedro\",\"product\":\"Libro de arquitectura\",\"quantity\":1,\"unitPrice\":85000}"
+curl.exe --% -s -X POST http://localhost:3000/orders -H "Content-Type: application/json" -d "{\"customerName\":\"Pedro\",\"product\":\"Libro de arquitectura\",\"quantity\":1,\"unitPrice\":85000}"
 ```
 
 Consola Kafka UI:
